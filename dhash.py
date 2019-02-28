@@ -33,7 +33,7 @@ if 'CODE ERREUR : 001' in str(out):
 elif 'CODE ERREUR : 002' in str(out):
 	print("%sAda kesalahan di alamat email/code, mohon hubungi saya"%(r))
 elif 'CODE ERREUR : 003' in str(out):
-	print("%sPanjang Hash melebihin 400 karakter%(r)")
+	print("%sPanjang Hash melebihin 400 karakter"%(r))
 elif 'CODE ERREUR : 005' in str(out):
 	print("%sHash yang di input tidak cocok dengan Type Hash yang di pilih"%(r))
 elif 'CODE ERREUR : 006' in str(out):

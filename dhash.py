@@ -34,7 +34,9 @@ elif 'CODE ERREUR : 002' in str(out):
 	print("%sAda kesalahan di alamat email/code, mohon hubungi saya"%(r))
 elif 'CODE ERREUR : 003' in str(out):
 	print("%sPanjang Hash melebihin 400 karakter"%(r))
+elif 'CODE ERREUR : 004' in str(out):
+	print("%sServer tidak memilik database type hash %s"%(r,type))
 elif 'CODE ERREUR : 005' in str(out):
-	print("%sHash yang di input tidak cocok dengan Type Hash yang di pilih"%(r))
+	print("%sHash yang di input tidak cocok dengan Type Hash"%(r))
 elif 'CODE ERREUR : 006' in str(out):
-	print("%sKesalahan Penulisan, priksa kembali"%(r))
+	print("%sInput tidak boleh kosong, priksa kembali"%(r))

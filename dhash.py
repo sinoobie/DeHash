@@ -20,13 +20,13 @@ print('''%s
  saya tidak menjamin semua hash ada di database
 server karena yang punya server bukan saya XD %s
 '''%(g,w,y,w))
-type=input("Input Hash Type: ").lower()
+type=input("Hash Type: ").lower()
 hash=input("Input Hash: ")
 email='nnb85353@zwoho.com'
 code='9c512744205f079c'
 
 req=requests.get('https://md5decrypt.net/Api/api.php?hash='+hash+'&hash_type='+type+'&email='+email+'&code='+code)
-out=(req.content).decode("utf-8", "ignore")
+out=(req.text)
 print("\nResults:",out)
 if 'CODE ERREUR : 001' in str(out):
 	print("%sSudah mencapai limit harian"%(r))
